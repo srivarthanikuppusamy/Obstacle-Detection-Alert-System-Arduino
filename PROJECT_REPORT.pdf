@@ -1,0 +1,100 @@
+# OBSTACLE DETECTION ALERT SYSTEM USING ARDUINO
+
+## Abstract
+
+The Obstacle Detection Alert System is a simple and low-cost safety project developed using Arduino Uno and an HC-SR04 Ultrasonic Sensor. The system detects nearby obstacles and alerts the user through an LED and buzzer. This project demonstrates the practical application of sensors, embedded systems, and automation technologies in real-world environments. The system can be used in robotic navigation, vehicle parking assistance, industrial safety systems, and blind assistance devices.
+
+## Introduction
+
+Obstacle detection is an important feature in modern safety and automation systems. Detecting objects before collision helps prevent accidents and improves operational efficiency. This project uses an ultrasonic sensor to measure the distance between the sensor and an obstacle. When the obstacle comes within a predefined range, the Arduino activates an LED and buzzer to provide a warning signal.
+
+The project is simple, economical, and suitable for educational purposes.
+
+## Objectives
+
+* To detect nearby obstacles using an ultrasonic sensor.
+* To alert users through visual and audio indicators.
+* To understand Arduino programming and sensor interfacing.
+* To develop a low-cost obstacle detection system.
+
+## Components Required
+
+| S.No | Component                 | Quantity |
+| ---- | ------------------------- | -------- |
+| 1    | Arduino UNO               | 1        |
+| 2    | HC-SR04 Ultrasonic Sensor | 1        |
+| 3    | LED                       | 1        |
+| 4    | Buzzer                    | 1        |
+| 5    | 220Ω Resistor             | 1        |
+| 6    | Breadboard                | 1        |
+| 7    | Jumper Wires              | 8-10     |
+| 8    | USB Cable                 | 1        |
+| 9    | Power Bank / Power Supply | 1        |
+
+## Working Principle
+
+The HC-SR04 ultrasonic sensor transmits ultrasonic sound waves and waits for the reflected signal from an object. The Arduino calculates the distance using the time taken for the echo signal to return.
+
+If the measured distance is less than the specified threshold value, the Arduino activates the LED and buzzer. If no object is detected within the threshold distance, the LED and buzzer remain OFF.
+
+## Circuit Connections
+
+### HC-SR04 Sensor
+
+* VCC → Arduino 5V
+* GND → Arduino GND
+* TRIG → Arduino Pin 9
+* ECHO → Arduino Pin 10
+
+### LED
+
+* Positive Terminal → Arduino Pin 7
+* Negative Terminal → 220Ω Resistor → GND
+
+### Buzzer
+
+* Positive Terminal → Arduino Pin 8
+* Negative Terminal → GND
+
+## Procedure
+
+1. Connect the HC-SR04 sensor to the Arduino Uno.
+2. Connect the LED through a 220Ω resistor.
+3. Connect the buzzer to the Arduino.
+4. Upload the Arduino program using Arduino IDE.
+5. Power the Arduino using a USB cable or power bank.
+6. Place an object in front of the sensor.
+7. Observe the LED and buzzer response when the obstacle approaches.
+
+## Applications
+
+* Vehicle Parking Assistance Systems
+* Robotics
+* Blind Assistance Devices
+* Industrial Safety Systems
+* Smart Navigation Systems
+* Obstacle Avoidance Robots
+
+## Advantages
+
+* Low Cost
+* Easy to Build
+* Real-Time Detection
+* Portable Design
+* Low Power Consumption
+* Reliable Performance
+
+## Result
+
+The Obstacle Detection Alert System successfully detected nearby obstacles and provided visual and audible alerts through the LED and buzzer. The system performed accurately and demonstrated the practical use of ultrasonic sensing technology.
+
+## Conclusion
+
+The project successfully achieved its objective of detecting obstacles and providing timely alerts. It is an effective and affordable solution for safety and automation applications. Future enhancements may include the addition of LCD displays, wireless communication modules, and IoT integration.
+
+## References
+
+1. Arduino UNO Documentation
+2. HC-SR04 Ultrasonic Sensor Datasheet
+3. Arduino IDE Documentation
+4. Embedded Systems and Sensor Interface Tutorials
